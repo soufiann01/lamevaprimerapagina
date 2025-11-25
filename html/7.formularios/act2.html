@@ -1,16 +1,49 @@
-<fieldset>
-  <!-- Titulo de Fieldset -->
-  <legend>Reserva de entrada</legend>
+<form action="#" method="post">
+    <h2>Formulario de compra de altavoces</h2>
 
-  <label>
-      Nombre y apellidos
-      <input type="text" name="nombre">
-  </label>
+    <!-- MODELO -->
+    <label for="modelo">Modelo:</label>
+    <select name="modelo" id="modelo" required>
+        <option value="" disabled selected>Selecciona un modelo</option>
+        <option value="R4">R4</option>
+        <option value="R5">R5</option>
+        <option value="SR1">SR1</option>
+    </select>
+    <br><br>
 
-  <label>
-      Número de asientos
-      <input type="number" name="numero">
-  </label>
+    <!-- POTENCIA -->
+    <label for="potencia">Potencia máxima (50–100 W):</label>
+    <select name="potencia" id="potencia" required>
+        <option value="" disabled selected>Selecciona la potencia</option>
+        <option value="50">50 W</option>
+        <option value="60">60 W</option>
+        <option value="70">70 W</option>
+        <option value="80">80 W</option>
+        <option value="90">90 W</option>
+        <option value="100">100 W</option>
+    </select>
+    <br><br>
 
-  <button type="submit">Pagar</button>
-</fieldset>
+    <!-- BLUETOOTH -->
+    <label for="bluetooth">¿Bluetooth?</label>
+    <select name="bluetooth" id="bluetooth" required>
+        <option value="" disabled selected>¿Incluye Bluetooth?</option>
+        <option value="sí">Sí</option>
+        <option value="no">No</option>
+    </select>
+    <br><br>
+
+    <!-- COLOR -->
+    <label for="color">Color:</label>
+    <select name="color" id="color" required>
+        <option value="" disabled selected>Selecciona un color</option>
+        <option value="negro">Negro</option>
+        <option value="blanco">Blanco</option>
+        <option value="gris">Gris</option>
+        <option value="rojo">Rojo</option>
+    </select>
+    <br><br>
+
+    <!-- BOTÓN -->
+    <button type="submit">Enviar pedido</button>
+</form>

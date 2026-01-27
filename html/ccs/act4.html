@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de HTML con variables CSS</title>
+    <style>
+        :root {
+            --color-principal: #2a7ae2;
+        }
+
+        h1 {
+            color: var(--color-principal);
+        }
+
+        a {
+            color: var(--color-principal);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenido a mi página web</h1>
+
+    <p>
+        Puedes visitar 
+        <a href="https://www.google.com" target="_blank">Google</a>, 
+        aprender en 
+        <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> 
+        o explorar proyectos en 
+        <a href="https://github.com" target="_blank">GitHub</a>.
+    </p>
+
+</body>
+</html>
